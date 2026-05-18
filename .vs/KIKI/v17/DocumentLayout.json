@@ -1,53 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\uC464\\CS\\GOLD\\KIKI\\",
+  "WorkspaceRootPath": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\managers\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\managers\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|solutionrelative:managers\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\data\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\data\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|solutionrelative:data\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6DF3CC3-8A84-4F14-81B0-12185D24AFFC}|Models\\Models.csproj|d:\\\uC464\\cs\\gold\\kiki\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6DF3CC3-8A84-4F14-81B0-12185D24AFFC}|Models\\Models.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6DF3CC3-8A84-4F14-81B0-12185D24AFFC}|Models\\Models.csproj|solutionrelative:models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932C913A-4EC9-4F15-AE93-70658AB1033F}|UI\\UI.csproj|d:\\\uC464\\cs\\gold\\kiki\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{932C913A-4EC9-4F15-AE93-70658AB1033F}|UI\\UI.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{932C913A-4EC9-4F15-AE93-70658AB1033F}|UI\\UI.csproj|solutionrelative:ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\managers\\shopmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\managers\\shopmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|solutionrelative:managers\\shopmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\data\\monsterskilldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\data\\monsterskilldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|solutionrelative:data\\monsterskilldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\data\\monsterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\data\\monsterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|solutionrelative:data\\monsterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\data\\playerskilldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\data\\playerskilldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0ACCD168-3495-4C73-A96A-BB3C5AB3F96C}|Data\\Data.csproj|solutionrelative:data\\playerskilldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\managers\\postofficemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\managers\\postofficemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|solutionrelative:managers\\postofficemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|solutionrelative:managers\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\managers\\deliverymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\managers\\deliverymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75F4125B-20BA-4641-A62F-E3D61BC70ADA}|Managers\\Managers.csproj|solutionrelative:managers\\deliverymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6DF3CC3-8A84-4F14-81B0-12185D24AFFC}|Models\\Models.csproj|d:\\\uC464\\cs\\gold\\kiki\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6DF3CC3-8A84-4F14-81B0-12185D24AFFC}|Models\\Models.csproj|d:\\\uC464\\cs\\gold\\kiki\\gm07_ksj_kiki\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6DF3CC3-8A84-4F14-81B0-12185D24AFFC}|Models\\Models.csproj|solutionrelative:models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -64,102 +64,95 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ItemData.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\ItemData.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\ItemData.cs",
               "RelativeDocumentMoniker": "Data\\ItemData.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\ItemData.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\ItemData.cs",
               "RelativeToolTip": "Data\\ItemData.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T00:24:19.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T00:24:19.575Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ShopManager.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\ShopManager.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\ShopManager.cs",
               "RelativeDocumentMoniker": "Managers\\ShopManager.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\ShopManager.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\ShopManager.cs",
               "RelativeToolTip": "Managers\\ShopManager.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAYwEoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T00:23:50.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T00:23:50.002Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "PostOfficeManager.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\PostOfficeManager.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\PostOfficeManager.cs",
               "RelativeDocumentMoniker": "Managers\\PostOfficeManager.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\PostOfficeManager.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\PostOfficeManager.cs",
               "RelativeToolTip": "Managers\\PostOfficeManager.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAQwIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T23:17:26.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T23:17:26.349Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "MonsterSkillData.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\MonsterSkillData.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\MonsterSkillData.cs",
               "RelativeDocumentMoniker": "Data\\MonsterSkillData.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\MonsterSkillData.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\MonsterSkillData.cs",
               "RelativeToolTip": "Data\\MonsterSkillData.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T22:44:42.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T22:44:42.702Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "MonsterData.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\MonsterData.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\MonsterData.cs",
               "RelativeDocumentMoniker": "Data\\MonsterData.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\MonsterData.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\MonsterData.cs",
               "RelativeToolTip": "Data\\MonsterData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T22:39:49.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T22:39:49.353Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "PlayerSkillData.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\PlayerSkillData.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\PlayerSkillData.cs",
               "RelativeDocumentMoniker": "Data\\PlayerSkillData.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Data\\PlayerSkillData.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\PlayerSkillData.cs",
               "RelativeToolTip": "Data\\PlayerSkillData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T22:38:05.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T22:38:05.673Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Skill.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Models\\Skill.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Skill.cs",
               "RelativeDocumentMoniker": "Models\\Skill.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Models\\Skill.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Skill.cs",
               "RelativeToolTip": "Models\\Skill.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T22:28:39.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T22:28:39.272Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "InventoryManager.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\InventoryManager.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\InventoryManager.cs",
               "RelativeDocumentMoniker": "Managers\\InventoryManager.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\InventoryManager.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\InventoryManager.cs",
               "RelativeToolTip": "Managers\\InventoryManager.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAkwDUAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-16T22:14:00.336Z",
               "EditorCaption": ""
@@ -168,53 +161,49 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Player.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Models\\Player.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Player.cs",
               "RelativeDocumentMoniker": "Models\\Player.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Models\\Player.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Player.cs",
               "RelativeToolTip": "Models\\Player.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAgwEQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T22:04:52.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T22:04:52.306Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "DeliveryManager.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\DeliveryManager.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\DeliveryManager.cs",
               "RelativeDocumentMoniker": "Managers\\DeliveryManager.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\DeliveryManager.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\DeliveryManager.cs",
               "RelativeToolTip": "Managers\\DeliveryManager.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAowEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T21:57:02.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T21:57:02.665Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UIManager.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\UI\\UIManager.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\UI\\UIManager.cs",
               "RelativeDocumentMoniker": "UI\\UIManager.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\UI\\UIManager.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\UI\\UIManager.cs",
               "RelativeToolTip": "UI\\UIManager.cs",
               "ViewState": "AgIAADECAAAAAAAAAAAcwEMCAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T21:11:00.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T21:11:00.53Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "BattleManager.cs",
-              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\BattleManager.cs",
+              "DocumentMoniker": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\BattleManager.cs",
               "RelativeDocumentMoniker": "Managers\\BattleManager.cs",
-              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\Managers\\BattleManager.cs",
+              "ToolTip": "D:\\\uC464\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Managers\\BattleManager.cs",
               "RelativeToolTip": "Managers\\BattleManager.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAqwDgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T21:09:06.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T21:09:06.232Z"
             }
           ]
         }

@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\쑤\\CS\\GOLD\\KIKI\\Data\\Data.csproj",
+      "projectUniqueName": "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "D:\\쑤\\CS\\GOLD\\KIKI\\Data\\Data.csproj",
+      "projectPath": "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\jinye\\.nuget\\packages\\",
-      "outputPath": "D:\\쑤\\CS\\GOLD\\KIKI\\Data\\obj\\",
+      "outputPath": "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jinye\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\쑤\\CS\\GOLD\\KIKI\\Models\\Models.csproj": {
-              "projectPath": "D:\\쑤\\CS\\GOLD\\KIKI\\Models\\Models.csproj"
+            "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Models.csproj": {
+              "projectPath": "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Models.csproj"
             }
           }
         }

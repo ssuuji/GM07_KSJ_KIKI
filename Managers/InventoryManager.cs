@@ -24,7 +24,7 @@ namespace Managers
         public InventoryManager(Inventory inventory, Player player)
         {
             this.inventory = inventory;
-            this.player = player;
+            this.player = player;        
         }
 
         #region 아이템사용
