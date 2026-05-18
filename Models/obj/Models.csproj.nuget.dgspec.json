@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Models.csproj": {}
+    "D:\\쑤\\CS\\GOLD\\GM07_KSJ_KIKI\\Models\\Models.csproj": {}
   },
   "projects": {
-    "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Models.csproj": {
+    "D:\\쑤\\CS\\GOLD\\GM07_KSJ_KIKI\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\쑤\\CS\\GOLD\\GM07_KSJ_KIKI\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\Models.csproj",
+        "projectPath": "D:\\쑤\\CS\\GOLD\\GM07_KSJ_KIKI\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\jinye\\.nuget\\packages\\",
-        "outputPath": "D:\\쑤\\CS\\GOLD\\KIKI\\GM07_KSJ_KIKI\\Models\\obj\\",
+        "outputPath": "D:\\쑤\\CS\\GOLD\\GM07_KSJ_KIKI\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jinye\\AppData\\Roaming\\NuGet\\NuGet.Config",
