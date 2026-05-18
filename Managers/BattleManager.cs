@@ -9,6 +9,10 @@ namespace Managers
         - 턴제 전투 관리
         - 플레이어 / 몬스터 스킬 처리
         - 승리 / 패배 / 도망 결과 반환
+
+        [설명]
+        SelectBattleMenu() : 스킬사용 및 인벤토리, 도망가기 
+        BattleResult       : Enum을 사용하여 전투결과 반환 (Win, Lost, RunAway)
     */
     public enum BattleResult{ Win, Lose, RunAway }
     public class BattleManager
@@ -22,9 +26,9 @@ namespace Managers
         private List<Skill> monsterSkills;
 
         private int selectMenu = 0;
-        private int monsterTurnCount = 0;
-        private bool isTurnUsed = false;
-        private string battleMessage = "✦ 키키의 차례입니다 ✦";
+        private int monsterTurnCount = 0; //몬스터 스킬사용 관련
+        private bool isTurnUsed = false;  //플레이어턴 확인 관련
+        private string battleMessage = "✦ 키키의 차례입니다 ✦"; //기본 첫 메세지
 
         public BattleManager(Player player, Inventory inventory, Quest quest)
         {
@@ -36,12 +40,14 @@ namespace Managers
             monsterSkills = MonsterSkillData.GetSkills(quest.MonsterKey);
             SetPlayerSkills();
         }
+
+        #region 플레이어(스킬셋팅,인벤토리)
         private void SetPlayerSkills()
         {
+            //플레이어 레벨별 스킬셋팅
             List<Skill> allSkills = PlayerSkillData.GetSkills();
 
             playerSkills = new List<Skill>();
-
             foreach (Skill skill in allSkills)
             {
                 if (player.Level >= skill.UnlockLevel)
@@ -51,26 +57,38 @@ namespace Managers
             }
         }
 
+        private void OpenInventory()
+        {
+            isTurnUsed = false;
+
+            InventoryManager inventoryManager = new InventoryManager(inventory, player);
+            inventoryManager.Run();
+        }
+        #endregion
+
+        #region 턴처리(플레이어/몬스터)
         private BattleResult? SelectBattleMenu()
         {
             //메뉴리스트 : 키키의스킬 + 인벤토리 + 도망가기
             if (selectMenu < playerSkills.Count)
             {
                 Skill skill = playerSkills[selectMenu];
-                UsePlayerSkill(skill);
+                PlayerTurn(skill);
                 return null;
             }
-
+            //인벤토리
             if (selectMenu == playerSkills.Count)
             {
                 OpenInventory();
                 return null;
             }
+            //도망가기
             battleMessage = "✦ 키키는 빗자루를 돌려 우체국으로 돌아갔다! ✦";
             return BattleResult.RunAway;
         }
 
-        private void UsePlayerSkill(Skill skill)
+
+        private void PlayerTurn(Skill skill)
         {
             if (player.MP < skill.MPCost)
             {
@@ -80,7 +98,6 @@ namespace Managers
             }
 
             isTurnUsed = true;
-
             player.UseMP(skill.MPCost);
             switch (skill.SkillType)
             {
@@ -106,14 +123,6 @@ namespace Managers
                                     $"\t✦ 방어력이 {skill.Power} 증가했다! ✦";
                     break;
             }
-        }
-
-        private void OpenInventory()
-        {
-            isTurnUsed = false;
-
-            InventoryManager inventoryManager = new InventoryManager(inventory, player);
-            inventoryManager.Run();
         }
 
         private void MonsterTurn()
@@ -153,7 +162,9 @@ namespace Managers
                     break;
             }
         }
+        #endregion
 
+        #region 전투상태 확인(승리/실패)
         private bool IsMonsterDead()
         {
             return monster.HP <= 0;
@@ -199,6 +210,7 @@ namespace Managers
             UIManager.DrawLoseBattle();
             InputManager.Fskip();
         }
+        #endregion
 
         public BattleResult Run()
         {

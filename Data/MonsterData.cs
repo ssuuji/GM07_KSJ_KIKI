@@ -3,12 +3,12 @@
 namespace Data
 {
     /*
-        [MonsterData.cs] Models.Monster.cs
+        [MonsterData.cs] 
         - 몬스터 데이터 관리
         - monsterKey를 사용하여 Monster 객체 생성
 
         [ 설명 ]
-        CreateMonster() : monsterKey에 맞는 Monster 객체 생성
+        CreateMonster() : monsterKey에 맞는 Monster 정보 반환
     */
     public static class MonsterData
     {

@@ -1,7 +1,7 @@
 ﻿namespace Models
 {
     /*
-        [Monster.cs] Models.Character.cs
+        [Monster.cs] 
         - Character 상속
         - 몬스터 정보 저장
 

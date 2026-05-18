@@ -3,13 +3,13 @@
 namespace Data
 {
     /*
-        [QuestData.cs] Models.Quest.cs
+        [QuestData.cs]
         - DAY별 퀘스트 원본 데이터 관리
-        - 배달지 / 설명 / 보상 / 관련 몬스터 설정
-        - 퀘스트별 대사 및 기억 조각 연출 관리
+        - 퀘스트아이템명 / 배달지 / 설명 / 보상 / 퀘스트아이템 키 / 관련 몬스터 키 설정
+        - 퀘스트별 대사 및 기억 조각 연출 관리 ( * 추후 분리 필요 )
 
         [ 흐름 ]
-        GetQuests() : DAY에 맞는 퀘스트 목록
+        GetQuests() : DAY에 맞는 퀘스트 정보 반환
     */
     public static class QuestData
     {

@@ -6,9 +6,13 @@ namespace Managers
     /*
         [PostOfficeManager.cs]
         - 우체국 안 현재 위치 관리
-        - W/A/S/D 이동 처리
-        - F 상호작용 처리
-        - 현재 위치에 맞는 설명 문구 반환
+
+        [ 설명 ]
+        GetCurrentPlace() : 현재 위치에 맞는 장소 문구 반환
+        - W/A/S/D 로 플레이어(키키) 이동 처리
+        - 편지정리대, 수첩, 상점, 배달 화면 연결
+        - 인벤토리 확인(플레이어상태 및 소지품 확인)
+        - 퀘스트 정보 확인
     */
     public class PostOfficeManager
     {
@@ -24,8 +28,8 @@ namespace Managers
         // 오늘 수락한 퀘스트 목록
         private List<Quest> acceptedQuests = new List<Quest>();
 
-        private Inventory inventory;
         private Player player;
+        private Inventory inventory;
         private MemoryPieceManager memoryPieceManager;
 
         public PostOfficeManager(Inventory inventory, MemoryPieceManager memoryPieceManager, Player player)
@@ -67,7 +71,6 @@ namespace Managers
             map[y, x + text.Length] = " ]";
         }
        
-
         private string GetCurrentPlace()
         {
             if (kikiY <= 1 && kikiX <= 8)
@@ -135,7 +138,6 @@ namespace Managers
         #endregion
 
         #region 키키 움직이기
-
         private void MoveKiki()
         {
             int prevX = kikiX, prevY = kikiY;

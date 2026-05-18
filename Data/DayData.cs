@@ -3,9 +3,12 @@
 namespace Data
 {
     /*
-        [DayData.cs] Models.Day.cs
+        [DayData.cs] 
         - DAY별 데이터 관리
         - DAY별 날씨 / 메시지 저장
+
+        [ 설명 ]
+        GetDay() : DAY 정보를 반환합니다
     */
     public static class DayData
     {

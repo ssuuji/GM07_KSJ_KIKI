@@ -4,7 +4,10 @@ namespace Data
 {
     /*
         [PlayerSkillData.cs]
-        - 키키의 스킬
+        - 키키의 스킬 데이터 관리
+
+        [ 설명 ]
+        GetSkills() : 플레이어의 스킬목록 반환
     */
     public static class PlayerSkillData
     {

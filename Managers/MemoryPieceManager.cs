@@ -7,6 +7,10 @@ namespace Managers
     /*
         [MemoryPieceManager.cs]
         - 기억 조각 수첩 관리
+
+        [ 설명 ]
+        Unlock() : 기억조각 해금
+        GetMemoryPiece() : 획득한 기억조각 정보 반환
     */
     public class MemoryPieceManager
     {

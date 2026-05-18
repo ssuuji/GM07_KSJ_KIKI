@@ -6,8 +6,11 @@ namespace Managers
     /*
         [DeliveryManager.cs]
         - 수락한 퀘스트 배달 진행 관리
-        - 배달할 퀘스트 선택
-        - 전투 연결
+        
+
+        [ 설명 ]
+        SelectDeliveryQuest() : 배달할 퀘스트 선택
+        - 배달 이동 중 전투 연결
         - 배달 물품 전달 / 보상 / 기억 조각 처리
     */
     public class DeliveryManager
@@ -75,6 +78,7 @@ namespace Managers
             UIManager.DrawDiliveryLetter();
             InputManager.Fskip();
 
+            //전투
             BattleManager battleManager = new BattleManager(player, inventory, quest);
             BattleResult result = battleManager.Run();
             if (result == BattleResult.RunAway || result == BattleResult.Lose)
@@ -83,11 +87,13 @@ namespace Managers
                 return false;
             }
             
+            //배달이동
             UIManager.DrawDeliveryContinue(quest);
             InputManager.Fskip();
 
             while (true)
             {
+                //배달물품 전달
                 UIManager.DrawDeliveryArrive(quest);
 
                 ConsoleKey key = InputManager.GetKey();
@@ -106,12 +112,14 @@ namespace Managers
                 }
             }
 
+            //배달보상
             UIManager.DrawDeliveryReward(quest);
             InputManager.Fskip();
 
             player.AddGold(quest.RewardGold);
             if (quest.HasMemoryPiece)
             {
+                //기억조각 스토리
                 UIManager.DrawDeliveryMemory(quest);
                 InputManager.Fskip();
 
@@ -121,6 +129,7 @@ namespace Managers
                 InputManager.Fskip();
             }
 
+            //배달종료
             quest.Complete();
             UIManager.DrawDeliveryComplete();
             InputManager.Fskip();

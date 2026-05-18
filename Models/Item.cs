@@ -5,7 +5,7 @@
         - 아이템 정보 저장
 
         [ 설명 ]
-        ItemType      : 일반 아이템 / 퀘스트 아이템
+        ItemType      : 일반 아이템 / 퀘스트 아이템 / 드랍아이템
         IsEquip       : 방어구장착 여부 저장
         DeliveryPlace : 퀘스트 아이템의 배달지 저장
         AddCount()    : 아이템 갯수추가
@@ -14,7 +14,7 @@
     public enum ItemType { Normal, Quest, Drop }
     public class Item
     {
-        public ItemType ItemType { get; private set; }      //타입 : 일반(Normal) 퀘스트(Quest) 드롭(Drop)
+        public ItemType ItemType { get; private set; }      //타입 : 일반(Normal) 퀘스트(Quest) 드랍(Drop)
         public string Name { get; private set; }            //아이템 명
         public string Description { get; private set; }     //아이템 설명
         public int Count { get; private set; }              //아이템 갯수

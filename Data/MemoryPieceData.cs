@@ -3,11 +3,11 @@
 namespace Data
 {
     /*
-        [MemoryPieceData.cs] Models.MemoryPiece.cs
+        [MemoryPieceData.cs] 
         - 기억 조각 원본 데이터 관리
 
         [ 흐름 ]
-        GetMemoryPieces() : 기억 조각 목록
+        GetMemoryPieces() : 기억 조각별 정보 반환
     */
     public static class MemoryPieceData
     {

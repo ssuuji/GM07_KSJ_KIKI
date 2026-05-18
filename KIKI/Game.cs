@@ -142,7 +142,6 @@ namespace Core
             }
         }
         #endregion
-
         public void Run()
         {
             ShowMainMenu();

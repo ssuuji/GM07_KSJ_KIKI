@@ -6,9 +6,12 @@ namespace Managers
 {
     /*
         [ShopManager.cs]
-        - 상점 UI 관리
+        - 상점 관리
+
+        [ 설명 ]
+        SetShopItems() : 상점 아이템 셋팅
         - 아이템 구매 / 판매 처리
-        - 수락한 퀘스트 물품 판매 목록 추가
+        - 수락한 퀘스트 물품 판매
     */
     public class ShopManager
     {
@@ -70,6 +73,8 @@ namespace Managers
                 }
             }
         }
+
+        #region 구매 / 판매
         private void ShopBuy()
         {
             while (true)
@@ -204,6 +209,7 @@ namespace Managers
                 }
             }
         }
+        #endregion
 
         public void Run()
         {

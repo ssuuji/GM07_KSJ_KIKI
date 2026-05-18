@@ -7,8 +7,10 @@ namespace Managers
     /*
         [LetterDeskManager.cs]
         - 편지 정리대 관리
+
+        [ 설명 ]
         - DAY별 퀘스트 목록 출력
-        - 퀘스트 수락 처리
+        - 퀘스트 여러개 수락 처리
     */
     public class LetterDeskManager
     {

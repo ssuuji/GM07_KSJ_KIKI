@@ -4,7 +4,10 @@ namespace Data
 {
     /*
         [MonsterSkillData.cs]
-        - 몬스터의 스킬
+        - 몬스터의 스킬 데이터 관리
+
+        [ 설명 ]
+        GetSkills() 몬스터별 스킬목록 반환
     */
     public static class MonsterSkillData
     {

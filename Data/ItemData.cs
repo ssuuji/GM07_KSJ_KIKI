@@ -3,12 +3,12 @@
 namespace Data
 {
     /*
-        [ItemData.cs] Models.Item.cs
+        [ItemData.cs] 
         - 아이템 원본 데이터 관리
         - itemKey를 사용하여 Item 객체 생성
 
         [ 설명 ]
-        CreateItem() :Dictionary에서 itemKey를 검색하여 Item 반환
+        CreateItem() :Dictionary에서 itemKey를 검색하여 Item정보를 반환
     */
     public static class ItemData
     {

@@ -4,7 +4,7 @@ using Models;
 namespace Managers
 {
     /*
-        [DayManager.cs] Models.Day.cs, Data.DayData.cs
+        [DayManager.cs] 
         - DAY 진행 관리
 
         [ 설명 ]

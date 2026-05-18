@@ -1,7 +1,7 @@
 ﻿namespace Models
 {
     /*
-        [Inventory.cs] Models.Item.cs
+        [Inventory.cs] 
         - 아이템 리스트 관리
         
         [ 설명 ]

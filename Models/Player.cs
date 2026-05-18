@@ -1,7 +1,7 @@
 ﻿namespace Models
 {
     /*
-        [Player.cs] Models.Character.cs
+        [Player.cs] 
         - Character 상속
         - 키키의 정보 관리
 
@@ -90,6 +90,7 @@
 
         public void UpgradeBroom()
         {
+            //무기강화는 +3 까지 가능
             if (BroomLevel >= 3)
             {
                 return;
@@ -125,6 +126,7 @@
 
         private void LevelUp()
         {
+            //레벨업시 HP +10 , MP +5, 공격력 +2
             Level++;
             EXP = 0;
 
