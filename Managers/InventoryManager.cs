@@ -12,7 +12,7 @@ namespace Managers
         [ 설명 ]
         RunDelivery() : 배달물품 전달
         Run()         : 인벤토리 열기
-        UseItem()     : 아이템 사용
+        UseItem()     : 아이템 사용    
 
     */
     public class InventoryManager
