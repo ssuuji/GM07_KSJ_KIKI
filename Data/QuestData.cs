@@ -32,7 +32,7 @@ namespace Data
                                              "\t\"잠깐 키키야, 추운데 따뜻한 차 한잔 하고 돌아가렴.\"\n\n" +
                                              "\t[따뜻한 기억이 떠오르는 것 같다.]", true,1),
 
-                                    new Quest("달빛 우유", "달빛 호수", "달빛 우유를 전달해주세요.", 150, "MoonMilk", "MoonWolf",
+                                    new Quest("달빛 우유", "달빛 호수", "달빛 우유를 전달해주세요.", 200, "MoonMilk", "MoonWolf",
                                              // 배달 이동
                                              "\t[호수 위로 잔잔한 물안개가 피어오르고 있다.]\n" +
                                              "\t[호숫가 관리인이 키키를 발견했다.]",
@@ -47,7 +47,7 @@ namespace Data
                                              // 기억 조각
                                              "", false,-1),
 
-                                    new Quest("바람 깃털", "바람 언덕", "바람 깃털을 전달해주세요.", 200, "WindFeather", "WindSpirit",
+                                    new Quest("바람 깃털", "바람 언덕", "바람 깃털을 전달해주세요.", 300, "WindFeather", "WindSpirit",
                                              // 배달 이동
                                              "\t[풍차가 천천히 돌아가고 있다.]\n" +
                                              "\t[언덕의 관리인이 손을 흔들었다.]",
@@ -64,7 +64,7 @@ namespace Data
                                   }
             },
 
-            {2, new List<Quest>() { new Quest ("밤 편지", "달빛 마을", "밤 편지를 전달해주세요.", 180, "NightLetter", "NightCrow",
+            {2, new List<Quest>() { new Quest ("밤 편지", "달빛 마을", "밤 편지를 전달해주세요.", 500, "NightLetter", "NightCrow",
                                               // 배달 이동
                                               "\t[마을의 불빛이 하나둘 어둠 속에서 반짝이고 있다.]\n" +
                                               "\t[누군가 조용히 키키를 기다리고 있었다.]",

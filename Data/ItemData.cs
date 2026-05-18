@@ -19,7 +19,7 @@ namespace Data
             //무기
             { "BroomUpgrade", () => new Item(ItemType.Normal, "빗자루 강화 세트", "빗자루의 마력을 강화한다.", 1, 100) },
             //물약
-            { "ManaPotion", () => new Item(ItemType.Normal, "마력 물약", "MP를 10 회복한다.", 1, 60) },
+            { "ManaPotion", () => new Item(ItemType.Normal, "마력 물약", "MP를 15 회복한다.", 1, 60) },
             { "SmallHpPotion", () => new Item(ItemType.Normal, "작은 회복 물약", "HP를 30 회복한다.", 1, 90) },
             { "BigHpPotion", () => new Item(ItemType.Normal, "큰 회복 물약", "HP를 60 회복한다.", 1, 180) },
             //방어구
@@ -47,11 +47,11 @@ namespace Data
         private static Dictionary<string, Func<Item>> dropItems = new Dictionary<string, Func<Item>>()
         {
             //DAY1
-            { "ForestFeather", () => new Item(ItemType.Normal, "숲깃 털조각", "숲 수호새의 깃털.", 1, 80) },
-            { "MoonCrystal", () => new Item(ItemType.Normal, "달빛 수정", "은은하게 빛나는 수정.", 1, 120) },
-            { "WindStone", () => new Item(ItemType.Normal, "바람 돌조각", "바람의 기운이 담긴 돌.", 1, 150) },
+            { "ForestFeather", () => new Item(ItemType.Drop, "숲깃 털조각", "숲 수호새의 깃털.", 1, 200) },
+            { "MoonCrystal", () => new Item(ItemType.Drop, "달빛 수정", "은은하게 빛나는 수정.", 1, 300) },
+            { "WindStone", () => new Item(ItemType.Drop, "바람 돌조각", "바람의 기운이 담긴 돌.", 1, 700) },
             //DAY2
-            { "NightFeather", () => new Item(ItemType.Normal, "밤깃 깃털", "어둠의 기운이 담긴 깃털.", 1, 200) }
+            { "NightFeather", () => new Item(ItemType.Drop, "밤깃 깃털", "어둠의 기운이 담긴 깃털.", 1, 700) }
         };
         #endregion
 

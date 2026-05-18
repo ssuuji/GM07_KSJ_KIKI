@@ -72,19 +72,20 @@ namespace Managers
 
         private void UsePlayerSkill(Skill skill)
         {
-            isTurnUsed = true;
-
             if (player.MP < skill.MPCost)
             {
+                isTurnUsed = false;
                 battleMessage = "✦ MP가 부족합니다! ✦";
                 return;
             }
+
+            isTurnUsed = true;
 
             player.UseMP(skill.MPCost);
             switch (skill.SkillType)
             {
                 case SkillType.Attack:
-                    int damage = skill.Power;
+                    int damage = player.Attack + skill.Power;
                     if (skill.Name == "빗자루 휘두르기")
                     {
                         // 기본 공격이면 플레이어 공격력 사용
@@ -247,11 +248,11 @@ namespace Managers
                     }
 
                     UIManager.DrawBattle(selectMenu, playerSkills, player, monster, battleMessage);
-                    Thread.Sleep(3500);
+                    Thread.Sleep(2500);
 
                     MonsterTurn();
                     UIManager.DrawBattle(selectMenu, playerSkills, player, monster, battleMessage);
-                    Thread.Sleep(3500);
+                    Thread.Sleep(2500);
 
                     if (IsPlayerDead())
                     {

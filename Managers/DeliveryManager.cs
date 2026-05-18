@@ -125,6 +125,7 @@ namespace Managers
             UIManager.DrawDeliveryComplete();
             InputManager.Fskip();
 
+            player.ResetPlayer();
             return true;
         }
     }

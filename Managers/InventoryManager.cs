@@ -33,6 +33,8 @@ namespace Managers
             switch (item.Name)
             {
                 case "마력 물약":
+                case "작은 회복 물약":
+                case "큰 회복 물약":
                     UsePotion(item);
                     break;
                 case "기본 복장":
@@ -51,13 +53,13 @@ namespace Managers
             switch (item.Name)
             {
                 case "마력 물약":
-                    player.GainMP(10);
+                    player.GainMP(15);
                     break;
                 case "작은 회복 물약":
-                    player.GainMP(30);
+                    player.GainHP(30);
                     break;
                 case "큰 회복 물약":
-                    player.GainMP(60);
+                    player.GainHP(60);
                     break;
             }
             inventory.RemoveItem(item);
@@ -75,19 +77,28 @@ namespace Managers
             }
             else
             {
+                foreach (Item invenItem in inventory.Items)
+                {
+                    if (invenItem.ItemType == ItemType.Normal)
+                    {
+                        invenItem.IsEquip = false;
+                    }
+                }
+                player.UnEquipDefense();
+
                 item.IsEquip = true;
 
-                if (item.Name == "기본 복장")
+                switch (item.Name)
                 {
-                    player.EquipDefense(3);
-                }
-                else if (item.Name == "튼튼한 배달복")
-                {
-                    player.EquipDefense(6);
-                }
-                else if (item.Name == "별빛 망토")
-                {
-                    player.EquipDefense(10);
+                    case "기본 복장":
+                        player.EquipDefense(3);
+                        break;
+                    case "튼튼한 배달복":
+                        player.EquipDefense(6);
+                        break;
+                    case "별빛 망토":
+                        player.EquipDefense(10);
+                        break;
                 }
             }
 
@@ -162,9 +173,11 @@ namespace Managers
 
         public void Run()
         {
+            bool isCheck = false;
             while (true)
             {
-                UIManager.DrawInventory(inventory, player, selectItem, false);
+                
+                UIManager.DrawInventory(inventory, player, selectItem, isCheck);
 
                 ConsoleKey key = InputManager.GetKey();
                 if (InputManager.W(key))
@@ -193,13 +206,37 @@ namespace Managers
                     {
                         continue;
                     }
-
+                    
                     Item item = inventory.Items[selectItem];
-                    UseItem(item);
+                    if (isCheck)
+                    {
+                        UseItem(item);
+                        isCheck = false;
+                        if (selectItem >= inventory.Items.Count)
+                        {
+                            selectItem = inventory.Items.Count - 1;
+                        }
+                        if (selectItem < 0)
+                        {
+                            selectItem = 0;
+                        }
+                    }
+                    else
+                    {
+                        isCheck = true;
+                    }
+                    
                 }
                 else if (InputManager.ESC(key))
                 {
-                    return;
+                    if (isCheck)
+                    {
+                        isCheck = false;
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
             }
         }

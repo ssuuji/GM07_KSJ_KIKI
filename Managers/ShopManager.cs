@@ -36,10 +36,13 @@ namespace Managers
             shopItems.Clear();
 
             // 일반 아이템
+            if (player.BroomLevel < 3)
+            {
+                shopItems.Add(ItemData.CreateItem("BroomUpgrade"));
+            }
             shopItems.Add(ItemData.CreateItem("ManaPotion"));
             shopItems.Add(ItemData.CreateItem("SmallHpPotion"));
             shopItems.Add(ItemData.CreateItem("BigHpPotion"));
-            shopItems.Add(ItemData.CreateItem("BroomUpgrade"));
             shopItems.Add(ItemData.CreateItem("BasicClothes"));
             shopItems.Add(ItemData.CreateItem("DeliveryClothes"));
             shopItems.Add(ItemData.CreateItem("StarCape"));
@@ -172,7 +175,7 @@ namespace Managers
                     }
 
                     Item item = inventory.Items[selectSellItem];
-                    if (item.ItemType == ItemType.Quest)
+                    if (item.ItemType == ItemType.Quest || item.IsEquip)
                     {
                         UIManager.DrawShopSellFail();
                         InputManager.Fskip();

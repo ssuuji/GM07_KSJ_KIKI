@@ -11,10 +11,10 @@
         AddCount()    : 아이템 갯수추가
         RemoveCount() : 아이템 갯수제거
     */
-    public enum ItemType { Normal, Quest }
+    public enum ItemType { Normal, Quest, Drop }
     public class Item
     {
-        public ItemType ItemType { get; private set; }      //타입 : 일반(Normal) 퀘스트(Quest)
+        public ItemType ItemType { get; private set; }      //타입 : 일반(Normal) 퀘스트(Quest) 드롭(Drop)
         public string Name { get; private set; }            //아이템 명
         public string Description { get; private set; }     //아이템 설명
         public int Count { get; private set; }              //아이템 갯수

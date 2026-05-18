@@ -315,8 +315,9 @@ namespace UI
             // 배달종료
             Console.Clear();
             Header("하루 마무리");
-            Console.WriteLine("\n\t\"오늘의 배달을 무사히 끝마쳤다.\""); 
-            Console.WriteLine(); 
+            Console.WriteLine("\t\"오늘의 배달을 무사히 끝마쳤다.\""); 
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine(outLine);
             Console.WriteLine($"\n\n\tDAY {day} 종료"); 
             Footer("[F] 확인");
@@ -392,12 +393,35 @@ namespace UI
 
                 if (isCheck)
                 {
-                    Console.WriteLine($"\t ✦ {inventory.Items[selectItem].Name} 을(를) 사용하시겠습니까? ✦");
+                    if (inventory.Items[selectItem].Name == "기본 복장"
+                        || inventory.Items[selectItem].Name == "튼튼한 배달복"
+                        || inventory.Items[selectItem].Name == "별빛 망토")
+                    {
+                        if (inventory.Items[selectItem].IsEquip)
+                        {
+                            Console.WriteLine($"\t ✦ {inventory.Items[selectItem].Name} 을(를) 착용해제하시겠습니까? ✦");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"\t ✦ {inventory.Items[selectItem].Name} 을(를) 착용하시겠습니까? ✦");
+                        }
+
+                    }
+                    else if (inventory.Items[selectItem].ItemType == ItemType.Quest
+                            || inventory.Items[selectItem].ItemType == ItemType.Drop)
+                    {
+                        Console.WriteLine($"\t ✦ 해당 아이템은 사용할 수 없습니다. ✦");
+                    }
+                    else if (inventory.Items[selectItem].ItemType == ItemType.Normal)
+                    {
+                        Console.WriteLine($"\t ✦ {inventory.Items[selectItem].Name} 을(를) 사용하시겠습니까? ✦");
+                    }
+                    
                 }
                 else
                 {
-                    Console.WriteLine($"\t {inventory.Items[selectItem].Name}");
-                    Console.WriteLine($"\t {inventory.Items[selectItem].Description}");
+                    Console.WriteLine($"\t  {inventory.Items[selectItem].Name}");
+                    Console.WriteLine($"\t  {inventory.Items[selectItem].Description}");
                 }
 
                 Console.WriteLine();
@@ -406,7 +430,7 @@ namespace UI
 
             if (isCheck)
             {
-                Footer("[ESC] 닫기");
+                Footer("[F] 확인   [ESC] 닫기");
             }
             else
             {
@@ -424,9 +448,9 @@ namespace UI
             {
                 Console.WriteLine($"     ✦ [{item.Name}] 물품을 전달합니다. ✦");
             }
-            else if (item.Name == "마력 물약")
+            else if (item.Name == "마력 물약" || item.Name == "작은 회복 물약" || item.Name == "큰 회복 물약")
             {
-                Console.WriteLine("     ✦ 마력 물약을 사용했습니다 ✦");
+                Console.WriteLine($"     ✦ {item.Name}을 사용했습니다 ✦");
             }
             else if (item.Name == "빗자루 강화 세트")
             {
@@ -633,7 +657,7 @@ namespace UI
                     {
                         Console.WriteLine
                         (
-                            $"\t  {item.Name} x{item.Count}  -  {sellPrice} G"
+                            $"\t   {item.Name} x{item.Count}  -  {sellPrice} G"
                         );
                     }
                 }
@@ -695,7 +719,7 @@ namespace UI
 
             Header("판매하기");
 
-            Console.WriteLine("     ✦ 퀘스트 물품은 판매할 수 없습니다 ✦");
+            Console.WriteLine("     ✦ 판매할 수 없는 아이템 입니다 ✦");
 
             Footer("[F] 계속");
         }
@@ -780,8 +804,9 @@ namespace UI
             Console.WriteLine();
             Console.WriteLine(quest.DeliveryRewardMsg);
             Console.WriteLine();
-            Console.WriteLine("\t보상:");
-            Console.WriteLine($"\t{quest.RewardGold} G");
+            ColorMsg(ConsoleColor.Yellow,"\t✦ 보상 ✦");
+            Console.WriteLine();
+            ColorMsg(ConsoleColor.Yellow, $"\t{quest.RewardGold} G");
             Console.WriteLine();
             Footer("[F] 우체국으로 돌아갑니다");
         }
@@ -796,6 +821,7 @@ namespace UI
         {
             // 배달종료
             Console.Clear();
+
             Header("배달 완료");
             Console.WriteLine("\t[우체국으로 돌아갑니다.]");
             Console.WriteLine();
@@ -804,14 +830,7 @@ namespace UI
         #endregion
 
         #region 전투
-        public static void DrawBattle
-(
-    int selectMenu,
-    List<Skill> playerSkills,
-    Player player,
-    Monster monster,
-    string battleMessage
-)
+        public static void DrawBattle(int selectMenu, List<Skill> playerSkills, Player player, Monster monster, string battleMessage)
         {
             Console.Clear();
 
@@ -823,19 +842,19 @@ namespace UI
             Console.WriteLine($"  ATK : {player.Attack}   DEF : {player.Defense}");
 
             Console.WriteLine(@"
-#######################                        ####################
-#######################                        #######*=###*=+++###
-######++###*==**#######                        #######*==*#=====+##
-####:-----:+**-:::#####                        #######**++======+##
-###:::.:--::.--+#######                        #######*#+===++*####
-###:.-***#*=..:...:####                        #####**+*+====*#####
-#####+*#####*:.:--=####                        ###**#++#=-===*#####
-#####*########+=#######                        ###*##+==*=-=+######
-#####*+:=*-.-+++#######                        #########*++==**####
-######-+###.--+*#######                        ###########*+#######
-#####:.:---++=+*#######                        ########*###########
-#######*=---===########                        #########**#########
-#######################                        ####################");
+    #######################                    #######################
+    #######################                    #########*=###*=+++####
+    ######++###*==**#######                    #########*==*#=====+###
+    ####:-----:+**-:::#####                    #########**++======+###
+    ###:::.:--::.--+#######                    #########*#+===++*#####
+    ###:.-***#*=..:...:####                    #######**+*+====*######
+    #####+*#####*:.:--=####                    #####**#++#=-===*######
+    #####*########+=#######                    #####*##+==*=-=+#######
+    #####*+:=*-.-+++#######                    ###########*++==**#####
+    ######-+###.--+*#######                    #############*+########
+    #####:.:---++=+*#######                    ##########*############
+    #######*=---===########                    ###########**##########
+    #######################                    #######################");
 
             Console.WriteLine();
             Console.WriteLine($"                                              🦅 {monster.Name}");
@@ -876,6 +895,31 @@ namespace UI
             Console.WriteLine();
             Console.WriteLine(outLine);
 
+            if (selectMenu < playerSkills.Count)
+            {
+                Skill skill = playerSkills[selectMenu];
+
+                Console.WriteLine("\t┌──────────────────────────────┐");
+                Console.WriteLine($"\t  [{skill.Name}]");
+                Console.WriteLine($"\t  {skill.Description}");
+                Console.WriteLine($"\t  MP : {skill.MPCost}소모");
+                Console.WriteLine("\t└──────────────────────────────┘");
+            }
+            else if (selectMenu == playerSkills.Count)
+            {
+                Console.WriteLine("\t┌──────────────────────────────┐");
+                Console.WriteLine("\t  인벤토리");
+                Console.WriteLine("\t  물약과 장비를 사용할 수 있다");
+                Console.WriteLine("\t└──────────────────────────────┘");
+            }
+            else
+            {
+                Console.WriteLine("\t┌──────────────────────────────┐");
+                Console.WriteLine("\t  도망가기");
+                Console.WriteLine("\t  우체국으로 돌아간다");
+                Console.WriteLine("\t└──────────────────────────────┘");
+            }
+
             if (monster.HP <= 0 || player.HP <= 0)
             {
                 Console.WriteLine("                             ✦ [F] 확인 ✦");
@@ -891,14 +935,14 @@ namespace UI
 
             Console.WriteLine();
 
-            Console.WriteLine("     획득 보상 :");
-
+            ColorMsg(ConsoleColor.Yellow,"     ✦ 획득 보상 ✦");
+            Console.WriteLine();
             if (dropItem != null)
             {
-                Console.WriteLine($"     {dropItem.Name} x{dropItem.Count}");
+                ColorMsg(ConsoleColor.Yellow, $"     {dropItem.Name} x{dropItem.Count}");
             }
-
-            Console.WriteLine($"     {gold} G");
+            Console.WriteLine();
+            ColorMsg(ConsoleColor.Yellow, $"     {gold} G");
 
             Footer("[F] 배달 계속하기");
         }

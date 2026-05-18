@@ -62,6 +62,14 @@
                 MP = MaxMP;
             }
         }
+        public void GainHP(int hp)
+        {
+            HP += hp;
+            if (HP > MaxHP)
+            {
+                HP = MaxHP;
+            }
+        }
         public void AddAttack(int attack) { Attack += attack; }
         public void RemoveAttack(int attack)
         {
